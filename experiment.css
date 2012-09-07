@@ -1,0 +1,64 @@
+body {
+	margin: 0 auto 10em;
+	padding-right: 250px;
+	width: 900px;
+}
+
+.context {
+	float: right;
+}
+
+#navigation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 1em;
+	list-style-type: none;
+	background-color: #FFF;
+}
+#navigation li {
+	display: inline-block;
+	margin-bottom: 1em;
+	text-align: right;
+}
+#navigation li a {
+	padding: 0.25em 0.5em;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	background-color: #333;
+}
+#navigation li a:hover {
+	background-color: #666;
+}
+
+#heading #opening {
+	width: 300px;
+}
+#heading blockquote {
+	margin: 3em 1em;
+	font-size: xx-large;
+}
+
+#book .context {
+	float: none;
+}
+#book iframe {
+	width: 1000px;
+	height: 500px;
+	border: none;
+}
+
+#planning-and-assignments {
+}
+
+#today li {
+	padding: 0.5em 0;
+}
+#today li a {
+	font-weight: bold;
+}
+#today li.done {
+	text-decoration: line-through;
+}
