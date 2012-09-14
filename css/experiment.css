@@ -4,8 +4,24 @@ body {
 	width: 900px;
 }
 
+code {
+	padding: 0.25em 0.5em;
+	background-color: #EEE;
+}
 .context {
 	float: right;
+}
+.example {
+	margin: 1em;
+	padding: 1em;
+	border: 3px solid green;
+}
+.example.example-container {
+	border-color: blue;
+}
+.example.example-focus {
+	border-color: red;
+	background-color: #CCC;
 }
 
 #navigation {
@@ -40,17 +56,11 @@ body {
 	margin: 3em 1em;
 	font-size: xx-large;
 }
-
-#book .context {
-	float: none;
+#heading blockquote cite {
+	display: block;
 }
-#book iframe {
-	width: 1000px;
-	height: 500px;
-	border: none;
-}
-
-#planning-and-assignments {
+#heading blockquote cite:before {
+	content: "— ";
 }
 
 #today li {

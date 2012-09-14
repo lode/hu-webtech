@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+	
+	<title>Photoshop naar HTML - Webtechnieken</title>
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="css/experiment.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/photoshop-naar-html.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+<body>
+	<ul id="navigation">
+		<li><a href="#what-and-why">Wat en waarom?</a></li>
+		<li><a href="#building-blocks">Blokkendoos</a></li>
+		<li><a href="#floats">Floats</a></li>
+		<li><a href="#positioning">Positioning</a></li>
+		<li><a href="#faux-columns">Faux columns</a></li>
+		<li><a href="#today">Vandaag</a></li>
+	</ul>
+	
+	<div id="heading">
+		<h1>Photoshop naar HTML - Webtechnieken</h1>
+		<div class="context">
+			&nbsp;
+		</div>
+		<blockquote title="hover for IE view ;-)">
+			CSS Sucks
+			<cite>Anne van Kesteren</cite>
+		</blockquote>
+	</div>
+	
+	<div id="what-and-why">
+		<h2>Wat en waarom?</h2>
+		<p>
+			We hebben een ontwerp. Nu nog de code.
+			Dit noemen sommigen <em>omzetten in HTML</em>.
+			Toch komt er wel meer creativiteit bij kijken dan die term doet vermoeden.
+			En het is ook leuk &mdash; je ziet je ontwerp realiteit worden.
+		</p>
+		<p>
+			Wat te doen?
+			<ul>
+				<li>die blokken maken en vullen met de juiste inhoud (HTML)</li>
+				<li>de blokken op de juiste plek plaatsen (CSS)</li>
+				<li>wat extra opmaak (CSS)</li>
+				<li>interactiviteit toevoegen (JS)</li>
+				<li><strong>maar eerst:</strong> je ontwerp indelen in losse blokken (<em>papier</em>)</li>
+			</ul>
+		</p>
+		<p>
+			Vroeger ging het wat anders, <em>slicen in Photoshop naar HTML tabellen</em>.
+			Dit werkt snel maar dit heeft vele nadelen.
+			Het maakt aanpassen, SEO, toegankelijkheid en onderhoud op eens lastige onderwerpen.
+			<em>En je leert niets.</em>
+			Wat wel? <strong>HTML zonder tabellen, CSS in plaats van font-regels, en tekst los van afbeeldingen.</strong>
+		</p>
+	</div>
+	
+	<div id="today">
+		<h2>Vandaag</h2>
+		<ul>
+			<li class="done">Ontwerpen bespreken</li>
+			<li>Uitleg over omzetten in HTML</li>
+			<li><a href="#building-blocks">Teken je ontwerp in blokken</a></li>
+			<li>Korte pauze</li>
+			<li>Maak de HTML zonder CSS</li>
+			<li>Gebruik CSS <a href="#floats">floats</a>, <a href="#positioning">positioning</a> en <a href="#faux columns">faux columns</a>
+			<li>Bespreken wat je hebt geleerd en wat we volgende week doen</li>
+		</ul>
+	</div>
+	
+	<div id="building-blocks">
+		<h2>Indelen in losse blokken</h2>
+		<p>
+			Teken je ontwerp uit Photoshop op papier, zonder al te veel vormgeving.
+			Zorg dat je alle soorten onderdelen in <strong>losse rechthoekige blokken</strong> zet.
+			Dus tekst, tussenkopjes, afbeeldingen, video's, formuliervelden, etc. allemaal in een eigen blok.
+			Blokken mogen wel <em>in</em> andere blokken zitten.
+			Vermijd overlap van de blokken.
+			<em>Enige toegestane overlap:</em> tekst bovenop een achtergrond-afbeelding.
+		</p>
+	</div>
+	
+	<div id="floats">
+		<h2>Floaten en kolommen</h2>
+		<p>
+			Je kunt blokken rechts of links laten <em>floaten></em> met <code>float: right;</code> of <code>float: left;</code>.
+			Dat blok wordt dan &quot;uit&quot; de logische volgorde van blokken gehaald en aan de zijkant geplaatst.
+		</p>
+		<div class="example example-container">
+			<p>Dit blok is de <em>container</em>.</p>
+			<div class="example example-focus">
+				<p>Dit blok heeft een <code>float: left;</code></p>
+			</div>
+			<div class="example">
+				<p>Dit blok is niet gefloat.</p>
+				<p>
+					Dat betekent ook dat lange tekst,
+					<br>
+					zoals dit stuk tekst hier
+					<br>
+					(wat dus erg lang wordt),
+					<br>
+					uiteindelijk weer onder het gefloate blok terecht komt.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="positioning">
+		<h2>CSS positioning</h2>
+		<p>
+			Je kunt blokken ook op een specifieke locatie neerzetten met <code>position: absolute;</code> of <code>position: fixed;</code>.
+			Ook zo'n blok wordt uit de logische volgorde van blokken gehaald.
+		</p>
+		<p>
+			Het hoofdmenu van deze pagina (de donkergrijze blokken onderin) hebben een <code>position: fixed;</code> meegekregen.
+		</p>
+		<div class="example example-container">
+			<p>Dit blok is de <em>container</em>.</p>
+			<div class="example">
+				<p>Dit blok heeft geen position gespecificeerd.</p>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+					and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</div>
+			<div class="example example-focus">
+				<p>Dit blok heeft een <code>position: absolute;</code></p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="faux-columns">
+		<h2>Faux kolommen</h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+#book .context {
+	float: none;
+}
+#book iframe {
+	width: 1000px;
+	height: 500px;
+	border: none;
+}

@@ -1,0 +1,27 @@
+#heading .context {
+	width: 400px;
+	height: 300px;
+	background: #FFFFFF url('../img/css-sucks-mozilla.png') no-repeat;
+	background-size: 400px;
+}
+#heading .context:hover {
+	background: #FFFFFF url('../img/css-sucks-ie.gif') no-repeat;
+	background-size: 400px;
+}
+
+#what-and-why {
+	clear: both;
+}
+
+#floats .example-focus {
+	float: left;
+}
+
+#positioning .example-container {
+	position: relative;
+}
+#positioning .example-focus {
+	position: absolute;
+	top: 150px;
+	right: 150px;
+}
