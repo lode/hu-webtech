@@ -39,15 +39,20 @@
 }
 #faux-columns .example-container {
 	width: 700px;
-	background: #FCC url('../img/faux.jpg') repeat-y;
 }
 #faux-columns .example-focus {
 	float: right;
 	width: 400px;
 	border: none;
 	background: none;
+	background-color: #F66;
 }
 #faux-columns .example-column {
+	padding: 1em 0;
 	width: 300px;
 	border: none;
+	background-color: #AAA;
+}
+#faux-columns .example-faux.example-container {
+	background: #F66 url('../img/faux.jpg') repeat-y;
 }
