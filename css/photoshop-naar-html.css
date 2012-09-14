@@ -32,3 +32,8 @@
 	top: 150px;
 	right: 150px;
 }
+
+#faux-columns .example-focus {
+	float: right;
+	width: 400px;
+}
