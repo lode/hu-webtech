@@ -33,7 +33,21 @@
 	right: 150px;
 }
 
+#faux-columns .example {
+	margin: 0;
+	padding: 0;
+}
+#faux-columns .example-container {
+	width: 700px;
+	background: #FCC url('../img/faux.jpg') repeat-y;
+}
 #faux-columns .example-focus {
 	float: right;
 	width: 400px;
+	border: none;
+	background: none;
+}
+#faux-columns .example-column {
+	width: 300px;
+	border: none;
 }
