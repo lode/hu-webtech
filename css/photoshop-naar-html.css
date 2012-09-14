@@ -14,7 +14,14 @@
 }
 
 #floats .example-focus {
-	float: left;
+	float: right;
+	width: 400px;
+}
+#floats .example-column-focus {
+	width: 400px;
+}
+#floats .example-column {
+	width: 300px;
 }
 
 #positioning .example-container {
